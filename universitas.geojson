@@ -1,0 +1,35 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "nama": "Universitas Esa Unggul Kebon Jeruk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [106.78360, -6.20190]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nama": "Universitas Esa Unggul Citra Raya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [106.53390, -6.22683]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nama": "Universitas Esa Unggul Bekasi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [106.98433, -6.17366]
+      }
+    }
+  ]
+}
