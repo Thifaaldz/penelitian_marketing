@@ -241,28 +241,28 @@ def apply_custom_styles():
         """
         <style>
         :root {
-            --ueu-navy: #003f6f;
-            --ueu-navy-dark: #002b55;
-            --ueu-bg: #f7f7fb;
-            --ueu-border: #d9deea;
-            --ueu-text: #111827;
-            --ueu-muted: #5f6673;
-            --ueu-soft-blue: #eaf1ff;
-            --ueu-green: #20c66b;
-            --ueu-yellow: #f7c514;
-            --ueu-red: #bd1822;
+            --ueu-navy: #3b82f6;      /* Bright blue untuk dark mode */
+            --ueu-navy-dark: #f8fafc; /* Off-white untuk judul utama */
+            --ueu-bg: #0b0f19;        /* Deep dark blue-black */
+            --ueu-border: #1e293b;    /* Dark slate border */
+            --ueu-text: #e2e8f0;      /* Slate-200 */
+            --ueu-muted: #94a3b8;     /* Slate-400 */
+            --ueu-soft-blue: #1e293b; /* Slate-800 */
+            --ueu-green: #2ecc71;
+            --ueu-yellow: #f1c40f;
+            --ueu-red: #e74c3c;
         }
         .stApp {
             background: var(--ueu-bg);
             color: var(--ueu-text);
         }
         [data-testid="stHeader"] {
-            background: rgba(247, 247, 251, 0.9);
+            background: rgba(11, 15, 25, 0.9);
             backdrop-filter: blur(10px);
             border-bottom: 1px solid var(--ueu-border);
         }
         [data-testid="stSidebar"] {
-            background: #ffffff;
+            background: #0b0f19;
             border-right: 1px solid var(--ueu-border);
         }
         [data-testid="stSidebar"] > div:first-child {
@@ -270,7 +270,7 @@ def apply_custom_styles():
         }
         [data-testid="stSidebar"] h1 {
             font-size: 22px;
-            color: var(--ueu-navy);
+            color: #ffffff;
             letter-spacing: 0;
             margin-bottom: 0;
         }
@@ -284,13 +284,13 @@ def apply_custom_styles():
             min-height: 42px;
         }
         [data-testid="stSidebar"] [role="radiogroup"] label:has(input:checked) {
-            background: #eef4fb;
-            color: var(--ueu-navy);
+            background: #1e293b;
+            color: #ffffff;
             border-left: 4px solid var(--ueu-navy);
             box-shadow: none;
         }
         [data-testid="stSidebar"] [role="radiogroup"] label:has(input:checked) p {
-            color: var(--ueu-navy);
+            color: #ffffff;
             font-weight: 700;
         }
         [data-testid="stSidebar"] hr {
@@ -312,6 +312,8 @@ def apply_custom_styles():
         .stButton>button {
             border-radius: 7px;
             border: 1px solid var(--ueu-border);
+            background: #1e293b;
+            color: #ffffff;
             font-weight: 700;
             min-height: 42px;
         }
@@ -323,6 +325,8 @@ def apply_custom_styles():
         }
         .stDownloadButton>button {
             border-radius: 7px;
+            background: #1e293b;
+            color: #ffffff;
             font-weight: 700;
             min-height: 42px;
         }
@@ -354,12 +358,12 @@ def apply_custom_styles():
         .admin-pill {
             border: 1px solid var(--ueu-border);
             border-radius: 8px;
-            background: #ffffff;
+            background: #131b2e;
             padding: 10px 14px;
             color: var(--ueu-navy-dark);
             min-width: 178px;
             text-align: right;
-            box-shadow: 0 3px 12px rgba(15, 23, 42, 0.04);
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
         }
         .admin-pill strong {
             display: block;
@@ -372,8 +376,8 @@ def apply_custom_styles():
         .metric-card, .content-card, .filter-card, .table-card {
             border: 1px solid var(--ueu-border);
             border-radius: 8px;
-            background: #ffffff;
-            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+            background: #131b2e;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
         }
         .metric-card {
             min-height: 116px;
@@ -388,8 +392,8 @@ def apply_custom_styles():
             border-radius: 8px;
             display: grid;
             place-items: center;
-            background: var(--ueu-soft-blue);
-            color: var(--ueu-navy);
+            background: #1e293b;
+            color: #60a5fa;
             font-weight: 800;
             margin-bottom: 13px;
         }
@@ -407,7 +411,7 @@ def apply_custom_styles():
             font-weight: 800;
         }
         .metric-change {
-            color: #14944f;
+            color: #2ecc71;
             font-size: 12px;
             font-weight: 700;
             margin-top: 9px;
@@ -430,19 +434,19 @@ def apply_custom_styles():
         }
         .card-box {
             border-radius: 8px;
-            background: #ffffff;
+            background: #131b2e;
             padding: 16px;
             border: 1px solid var(--ueu-border);
-            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
         }
         .kanban-card {
-            background: #ffffff;
+            background: #131b2e;
             border-radius: 8px;
             border: 1px solid var(--ueu-border);
             padding: 16px;
             margin-bottom: 12px;
             min-height: 118px;
-            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
         }
         .kanban-card strong {
             display: block;
@@ -462,10 +466,10 @@ def apply_custom_styles():
             text-transform: uppercase;
             margin-bottom: 12px;
         }
-        .badge-blue { background: #dceaff; color: #064b83; }
-        .badge-green { background: #dff7e9; color: #14864b; }
-        .badge-yellow { background: #fff4c5; color: #9a6b00; }
-        .badge-red { background: #ffe0e1; color: #bd1822; }
+        .badge-blue { background: #1e3a8a; color: #60a5fa; }
+        .badge-green { background: #064e3b; color: #34d399; }
+        .badge-yellow { background: #78350f; color: #fbbf24; }
+        .badge-red { background: #7f1d1d; color: #f87171; }
         .status-dot {
             display: inline-block;
             width: 8px;
@@ -478,15 +482,15 @@ def apply_custom_styles():
             border: 1px solid var(--ueu-border);
             border-radius: 8px;
             overflow: hidden;
-            background: #ffffff;
-            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+            background: #131b2e;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
         }
         .calendar-grid {
             display: grid;
             grid-template-columns: repeat(7, minmax(92px, 1fr));
         }
         .calendar-head {
-            background: #eef2ff;
+            background: #1e293b;
             color: var(--ueu-muted);
             text-align: center;
             font-size: 12px;
@@ -494,13 +498,13 @@ def apply_custom_styles():
             letter-spacing: 0.06em;
             padding: 13px 6px;
             text-transform: uppercase;
-            border-right: 1px solid #e4e7ef;
+            border-right: 1px solid var(--ueu-border);
         }
         .calendar-cell {
             min-height: 124px;
             padding: 10px;
-            border-top: 1px solid #eef0f4;
-            border-right: 1px solid #eef0f4;
+            border-top: 1px solid var(--ueu-border);
+            border-right: 1px solid var(--ueu-border);
             color: var(--ueu-text);
         }
         .calendar-date {
@@ -514,26 +518,26 @@ def apply_custom_styles():
             font-size: 12px;
             font-weight: 700;
             border-left: 4px solid var(--ueu-navy);
-            background: #e7f0fb;
-            color: var(--ueu-navy-dark);
+            background: #1e293b;
+            color: #ffffff;
         }
         .calendar-event.done {
-            background: #e7f8ee;
+            background: #064e3b;
             border-left-color: var(--ueu-green);
         }
         .calendar-event.pending {
-            background: #fff8db;
+            background: #78350f;
             border-left-color: var(--ueu-yellow);
         }
         .calendar-event.follow {
-            background: #ffe9ea;
+            background: #7f1d1d;
             border-left-color: var(--ueu-red);
         }
         [data-testid="stDataFrame"] {
             border: 1px solid var(--ueu-border);
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
         }
         div[data-baseweb="select"] > div,
         .stTextInput input,
@@ -541,8 +545,9 @@ def apply_custom_styles():
         .stDateInput input,
         .stTextArea textarea {
             border-radius: 7px;
-            border-color: #cbd3e2;
-            background: #f8f9fd;
+            border-color: var(--ueu-border) !important;
+            background: #131b2e !important;
+            color: #ffffff !important;
         }
         @media (max-width: 900px) {
             .page-header {
@@ -677,10 +682,10 @@ def render_sidebar():
     st.sidebar.markdown("---")
     st.sidebar.markdown(
         """
-        <div class="card-box" style="background:#eaf1ff; box-shadow:none;">
-            <div class="soft-label">System Status</div>
-            <strong style="color:#003f6f;">GIS Engine Active</strong>
-            <div style="color:#5f6673; font-size:12px; margin-top:6px;">Data sekolah dan kampus siap dianalisis.</div>
+        <div class="card-box" style="background:#1e293b; box-shadow:none; border:1px solid #334155;">
+            <div class="soft-label" style="color:#94a3b8;">System Status</div>
+            <strong style="color:#60a5fa;">GIS Engine Active</strong>
+            <div style="color:#cbd5e1; font-size:12px; margin-top:6px;">Data sekolah dan kampus siap dianalisis.</div>
         </div>
         """,
         unsafe_allow_html=True,
@@ -743,12 +748,12 @@ def add_zone_information(schools_df, campuses_df):
             np.where(min_distances <= 10.0, "Zona Potensial",
             np.where(min_distances <= 15.0, "Zona Ekspansi", "Zona Perluasan")))
     
-    # Colors (R, G, B, Alpha)
+    # Colors (R, G, B, Alpha) - Optimasi untuk peta gelap (glow effect)
     color_map = {
-        "Zona Inti": [32, 198, 107, 180],       # Green
-        "Zona Potensial": [247, 197, 20, 180],  # Yellow/Orange
-        "Zona Ekspansi": [0, 93, 164, 180],     # Blue
-        "Zona Perluasan": [189, 189, 189, 180], # Grey
+        "Zona Inti": [46, 213, 115, 200],       # Green (lebih terang)
+        "Zona Potensial": [255, 211, 42, 200],   # Yellow (lebih terang)
+        "Zona Ekspansi": [44, 130, 201, 200],    # Blue (lebih terang)
+        "Zona Perluasan": [168, 180, 192, 150],  # Grey
     }
 
     schools_df.loc[schools_clean.index, "ZONE"] = zones
@@ -761,25 +766,25 @@ def add_zone_information(schools_df, campuses_df):
 def zone_summary_cards(inti_cnt, inti_pct, pot_cnt, pot_pct, eks_cnt, eks_pct, per_cnt, per_pct):
     return f"""
     <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 10px;">
-        <div style="background:#eefbef; border:1px solid #c2ecd0; border-radius:8px; padding:12px; text-align:center;">
-            <div style="color:#14864b; font-size:11px; font-weight:800; text-transform:uppercase;">Zona Inti</div>
-            <div style="color:#0f5132; font-size:20px; font-weight:800; margin:4px 0;">{inti_cnt}</div>
-            <div style="color:#14864b; font-size:11px; font-weight:700;">Sekolah ({inti_pct:.0f}%)</div>
+        <div style="background:#062f1c; border:1px solid #14864b; border-radius:8px; padding:12px; text-align:center;">
+            <div style="color:#2ecc71; font-size:11px; font-weight:800; text-transform:uppercase;">Zona Inti</div>
+            <div style="color:#2ecc71; font-size:20px; font-weight:800; margin:4px 0;">{inti_cnt}</div>
+            <div style="color:#2ecc71; font-size:11px; font-weight:700;">Sekolah ({inti_pct:.0f}%)</div>
         </div>
-        <div style="background:#fffcf0; border:1px solid #fcebb3; border-radius:8px; padding:12px; text-align:center;">
-            <div style="color:#9a6b00; font-size:11px; font-weight:800; text-transform:uppercase;">Zona Potensial</div>
-            <div style="color:#664d03; font-size:20px; font-weight:800; margin:4px 0;">{pot_cnt}</div>
-            <div style="color:#9a6b00; font-size:11px; font-weight:700;">Sekolah ({pot_pct:.0f}%)</div>
+        <div style="background:#3c2b0d; border:1px solid #9a6b00; border-radius:8px; padding:12px; text-align:center;">
+            <div style="color:#f1c40f; font-size:11px; font-weight:800; text-transform:uppercase;">Zona Potensial</div>
+            <div style="color:#f1c40f; font-size:20px; font-weight:800; margin:4px 0;">{pot_cnt}</div>
+            <div style="color:#f1c40f; font-size:11px; font-weight:700;">Sekolah ({pot_pct:.0f}%)</div>
         </div>
-        <div style="background:#e8f4fd; border:1px solid #b8dbf7; border-radius:8px; padding:12px; text-align:center;">
-            <div style="color:#005da4; font-size:11px; font-weight:800; text-transform:uppercase;">Zona Ekspansi</div>
-            <div style="color:#084298; font-size:20px; font-weight:800; margin:4px 0;">{eks_cnt}</div>
-            <div style="color:#005da4; font-size:11px; font-weight:700;">Sekolah ({eks_pct:.0f}%)</div>
+        <div style="background:#0b2545; border:1px solid #005da4; border-radius:8px; padding:12px; text-align:center;">
+            <div style="color:#3498db; font-size:11px; font-weight:800; text-transform:uppercase;">Zona Ekspansi</div>
+            <div style="color:#3498db; font-size:20px; font-weight:800; margin:4px 0;">{eks_cnt}</div>
+            <div style="color:#3498db; font-size:11px; font-weight:700;">Sekolah ({eks_pct:.0f}%)</div>
         </div>
-        <div style="background:#f8f9fa; border:1px solid #dee2e6; border-radius:8px; padding:12px; text-align:center;">
-            <div style="color:#6c757d; font-size:11px; font-weight:800; text-transform:uppercase;">Zona Perluasan</div>
-            <div style="color:#343a40; font-size:20px; font-weight:800; margin:4px 0;">{per_cnt}</div>
-            <div style="color:#6c757d; font-size:11px; font-weight:700;">Sekolah ({per_pct:.0f}%)</div>
+        <div style="background:#1e293b; border:1px solid #475569; border-radius:8px; padding:12px; text-align:center;">
+            <div style="color:#94a3b8; font-size:11px; font-weight:800; text-transform:uppercase;">Zona Perluasan</div>
+            <div style="color:#cbd5e1; font-size:20px; font-weight:800; margin:4px 0;">{per_cnt}</div>
+            <div style="color:#94a3b8; font-size:11px; font-weight:700;">Sekolah ({per_pct:.0f}%)</div>
         </div>
     </div>
     """
@@ -867,17 +872,17 @@ def render_dashboard_bottom_row(schools_with_zones):
                 </thead>
                 <tbody>
                     <tr style="border-bottom: 1px solid var(--ueu-border);">
-                        <td style="padding: 8px 0; font-weight: 700; color: #003f6f;">🏛️ Jakarta</td>
+                        <td style="padding: 8px 0; font-weight: 700; color: #60a5fa;">🏛️ Jakarta</td>
                         <td style="padding: 8px 0; color: var(--ueu-muted);">Promosi Digital, Kerja sama SMA, Open House</td>
                         <td style="padding: 8px 0; text-align: right;"><span class="badge badge-red">Tinggi</span></td>
                     </tr>
                     <tr style="border-bottom: 1px solid var(--ueu-border);">
-                        <td style="padding: 8px 0; font-weight: 700; color: #20c66b;">🏛️ Tangerang</td>
+                        <td style="padding: 8px 0; font-weight: 700; color: #2ecc71;">🏛️ Tangerang</td>
                         <td style="padding: 8px 0; color: var(--ueu-muted);">Event Sekolah, Beasiswa, Promosi Komunitas</td>
                         <td style="padding: 8px 0; text-align: right;"><span class="badge badge-red">Tinggi</span></td>
                     </tr>
                     <tr>
-                        <td style="padding: 8px 0; font-weight: 700; color: #f7c514;">🏛️ Bekasi</td>
+                        <td style="padding: 8px 0; font-weight: 700; color: #f1c40f;">🏛️ Bekasi</td>
                         <td style="padding: 8px 0; color: var(--ueu-muted);">Promosi Digital, Open House, Kerja sama SMA</td>
                         <td style="padding: 8px 0; text-align: right;"><span class="badge badge-yellow">Sedang</span></td>
                     </tr>
@@ -1014,11 +1019,11 @@ def render_map_section(compact: bool = False):
         uni_map["ICON"] = "🏛️"
 
         # Define Layers
-        # 1. TileLayer - CartoDB Positron (terang/putih, semua marker tetap terlihat)
+        # 1. TileLayer - CartoDB Dark Matter (tema gelap, semua marker menyala)
         layers = [
             pdk.Layer(
                 "TileLayer",
-                data="https://basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}.png",
+                data="https://basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}.png",
                 min_zoom=0,
                 max_zoom=19,
                 tile_size=256,
@@ -1035,8 +1040,8 @@ def render_map_section(compact: bool = False):
                     "ScatterplotLayer",
                     data=uni_map,
                     get_position="[Longitude, Latitude]",
-                    get_fill_color="[160, 160, 160, 35]",   # Grey
-                    get_line_color="[120, 120, 120, 160]",
+                    get_fill_color="[168, 180, 192, 25]",   # Grey
+                    get_line_color="[168, 180, 192, 110]",
                     get_line_width=2,
                     get_radius=20000,  # 20 km
                     pickable=False,
@@ -1050,8 +1055,8 @@ def render_map_section(compact: bool = False):
                     "ScatterplotLayer",
                     data=uni_map,
                     get_position="[Longitude, Latitude]",
-                    get_fill_color="[0, 93, 164, 40]",      # Blue
-                    get_line_color="[0, 93, 164, 180]",
+                    get_fill_color="[44, 130, 201, 30]",      # Blue
+                    get_line_color="[44, 130, 201, 140]",
                     get_line_width=2,
                     get_radius=15000,  # 15 km
                     pickable=False,
@@ -1065,8 +1070,8 @@ def render_map_section(compact: bool = False):
                     "ScatterplotLayer",
                     data=uni_map,
                     get_position="[Longitude, Latitude]",
-                    get_fill_color="[247, 197, 20, 45]",    # Yellow
-                    get_line_color="[200, 155, 0, 200]",
+                    get_fill_color="[255, 211, 42, 35]",    # Yellow
+                    get_line_color="[255, 211, 42, 160]",
                     get_line_width=2,
                     get_radius=10000,  # 10 km
                     pickable=False,
@@ -1080,8 +1085,8 @@ def render_map_section(compact: bool = False):
                     "ScatterplotLayer",
                     data=uni_map,
                     get_position="[Longitude, Latitude]",
-                    get_fill_color="[32, 198, 107, 50]",    # Green
-                    get_line_color="[20, 150, 80, 220]",
+                    get_fill_color="[46, 213, 115, 40]",    # Green
+                    get_line_color="[46, 213, 115, 180]",
                     get_line_width=2,
                     get_radius=5000,  # 5 km
                     pickable=False,
@@ -1173,21 +1178,21 @@ def render_map_section(compact: bool = False):
                 <div style="display:flex; align-items:start; gap:10px;">
                     <span style="font-size:18px;">🏛️</span>
                     <div>
-                        <strong style="color:#003f6f; font-size:12px;">Kampus Jakarta</strong><br>
+                        <strong style="color:#60a5fa; font-size:12px;">Kampus Jakarta</strong><br>
                         <span style="font-size:11px; color:var(--ueu-muted);">Kebon Jeruk, Jakarta Barat<br>Lat: {jkt_lat:.5f} · Lng: {jkt_lng:.5f}</span>
                     </div>
                 </div>
                 <div style="display:flex; align-items:start; gap:10px;">
                     <span style="font-size:18px;">🏛️</span>
                     <div>
-                        <strong style="color:#20c66b; font-size:12px;">Kampus Tangerang</strong><br>
+                        <strong style="color:#2ecc71; font-size:12px;">Kampus Tangerang</strong><br>
                         <span style="font-size:11px; color:var(--ueu-muted);">Citra Raya, Tangerang<br>Lat: {tng_lat:.5f} · Lng: {tng_lng:.5f}</span>
                     </div>
                 </div>
                 <div style="display:flex; align-items:start; gap:10px;">
                     <span style="font-size:18px;">🏛️</span>
                     <div>
-                        <strong style="color:#f7c514; font-size:12px;">Kampus Bekasi</strong><br>
+                        <strong style="color:#f1c40f; font-size:12px;">Kampus Bekasi</strong><br>
                         <span style="font-size:11px; color:var(--ueu-muted);">Bekasi<br>Lat: {bks_lat:.5f} · Lng: {bks_lng:.5f}</span>
                     </div>
                 </div>
@@ -1202,19 +1207,19 @@ def render_map_section(compact: bool = False):
         st.markdown("""
         <div style="display:flex; flex-direction:column; gap:8px; font-size:12px; margin-bottom:16px;">
             <div style="display:flex; align-items:center; gap:8px;">
-                <div style="width:14px; height:14px; background:#20c66b; border-radius:3px; opacity:0.8;"></div>
+                <div style="width:14px; height:14px; background:#2ecc71; border-radius:3px; opacity:0.8;"></div>
                 <div>Zona Inti (0 – 5 km)</div>
             </div>
             <div style="display:flex; align-items:center; gap:8px;">
-                <div style="width:14px; height:14px; background:#f7c514; border-radius:3px; opacity:0.8;"></div>
+                <div style="width:14px; height:14px; background:#f1c40f; border-radius:3px; opacity:0.8;"></div>
                 <div>Zona Potensial (5 – 10 km)</div>
             </div>
             <div style="display:flex; align-items:center; gap:8px;">
-                <div style="width:14px; height:14px; background:#005da4; border-radius:3px; opacity:0.8;"></div>
+                <div style="width:14px; height:14px; background:#3498db; border-radius:3px; opacity:0.8;"></div>
                 <div>Zona Ekspansi (10 – 15 km)</div>
             </div>
             <div style="display:flex; align-items:center; gap:8px;">
-                <div style="width:14px; height:14px; background:#bdbebe; border-radius:3px; opacity:0.8;"></div>
+                <div style="width:14px; height:14px; background:#a8b4c0; border-radius:3px; opacity:0.8;"></div>
                 <div>Zona Perluasan (&gt; 15 km)</div>
             </div>
         </div>
@@ -1258,8 +1263,8 @@ def render_school_data():
             <div class="soft-label">Region Distribution</div>
             <h3>Top: {top_region}</h3>
             <h2 style="font-size:22px;">High Potential</h2>
-            <div style="height:8px;background:#dce5f2;border-radius:99px;margin-top:12px;">
-                <div style="height:8px;width:68%;background:#003f6f;border-radius:99px;"></div>
+            <div style="height:8px;background:#1e293b;border-radius:99px;margin-top:12px;">
+                <div style="height:8px;width:68%;background:#3b82f6;border-radius:99px;"></div>
             </div>
         </div>
         """,
@@ -1665,7 +1670,7 @@ def render_reports():
 
     st.markdown("### Rekomendasi Sekolah Potensial")
     top_schools = st.session_state.schools.sort_values(by="POTENSI_SKOR", ascending=False).head(8)
-    st.table(top_schools[["NAME", "DISTRICT", "PROVINCE", "POTENSI_SKOR"]])
+    st.dataframe(top_schools[["NAME", "DISTRICT", "PROVINCE", "POTENSI_SKOR"]], hide_index=True)
 
     st.markdown("### Alumni per Program Minat")
     if not alumni.empty:
